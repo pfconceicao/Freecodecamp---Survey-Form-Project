@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>freeCodeCamp Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+    </head>
+  <body>
+    <main class="main">
+      <div class="main child">
+        <h1 id="title">freeCodeCamp Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <fieldset>
+      <form class="survey-form" id="survey-form">
+      <label id="name-label">Name</label>
+      <label input type="text" name="name"></label>
+      <input id ="name" type="text" placeholder="Enter your name" required></input>
+      <label id="email-label">Email</label>
+      <input id ="email" type="email" placeholder="Enter your email" required></input>
+      <label input type="email" name="email"></label>
+      <label id="number-label">Age (optional)</label>
+      <input id ="number" type="number" min="18" max="120" placeholder="10-120">
+      <label input type="text" name="Age"/></label>
+      <label id="name-label">Which option best describes your current role?</label>
+      <select name="referrer" id="dropdown">
+        <option value="">(select one)</option>
+        <option value="1">Student</option>
+        <option value="2">Full Time Job</option>
+        <option value="3">Full Time Learner</option>
+        <option value="4">Prefer Not To Say</option>
+        <option value="5">Other</option>
+        </select>
+      <div class="reccomend">
+        <p>Would you recommend freeCodeCamp to a friend?</p>
+        <label><input type="radio" name="account-type" class="inline" value="1" /> Definitely</label>
+        <label><input type="radio" name="account-type" class="inline" value="2" /> Maybe</label>
+        <label><input type="radio" name="account-type" class="inline" value="3" /> Not Sure</label></div>
+        <div class="favorite">
+          <p class="favorite">What would you like to see improved? (Check all that apply)</p>
+          <label><input type="checkbox" value="1">Front End Projects</label>
+          <label><input type="checkbox" value="2">Back End Projects</label>
+          <label><input type="checkbox" value="3">Data Visualization</label>
+          <label><input type="checkbox" value="4">Challenges</label>
+          <label><input type="checkbox" value="5">Open Source Community</label>
+          <label><input type="checkbox" value="6">Gitter help rooms</label>
+          <label><input type="checkbox" value="7">Videos</label>
+          <label><input type="checkbox" value="8">City Meetups</label>
+          <label><input type="checkbox" value="9">Wiki</label>
+          <label><input type="checkbox" value="10">Forum</label>
+          <label><input type="checkbox" value="11">Additional Courses</label>
+          <p id="Comments">Any comments or suggestions?</p>
+          <textarea name="Comments" rows="3" cols="30" placeholder="Enter your comment here"></textarea>
+          <input type="submit" value="submit" button id="submit">
+        </div>
+    </body>
+</html>
